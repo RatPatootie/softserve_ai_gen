@@ -3,6 +3,7 @@
 ## Overview
 A comprehensive Retrieval-Augmented Generation system for The Batch news articles, supporting both text and image content.
 
+![alt text](image.png)
 ## Features
 - Web scraping from The Batch
 - Multimodal content processing (text + images)

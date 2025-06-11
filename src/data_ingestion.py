@@ -56,7 +56,7 @@ class BatchScraper:
             response = self.session.get(url)
             soup = BeautifulSoup(response.text, 'html.parser')
 
-            content_blocks = soup.find_all(['h2', 'h3', 'p', 'img'])
+            content_blocks = soup.find_all(['h1', 'h2', 'p', 'img'])
             current_article = {}
             article_started = False
 
