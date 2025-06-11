@@ -1,0 +1,112 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Installer logs
+debug.log
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# mypy
+.mypy_cache/
+.dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# VS Code
+.vscode/
+
+# Environments
+env/
+venv/
+ENV/
+venv.bak/
+
+# Streamlit
+.streamlit/
+
+# dotenv
+.env
+.env.*
+
+# Database
+*.sqlite3
+*.db
+chroma_db/
+
+# Data
+/data/
+!/data/images/
+
+# Logs
+*.log
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Docs build
+/docs/_build/
+
+# Models
+/models/
+
+# Ignore test outputs
+/tests/__pycache__/
+/tests/*.pyc
+
+# Misc
+*.bak
+*.swp
+*.tmp
+
+# Ignore package-lock and yarn lock if present
+package-lock.json
+yarn.lock
