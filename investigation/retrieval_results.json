@@ -1,0 +1,113 @@
+{
+  "text_results": {
+    "ids": [
+      [
+        "41ce6a0b-1d1f-491c-b0b7-833ef2aa070f",
+        "f0034140-ffaf-42fa-9d77-8d86ffe6f173",
+        "b81fd694-13aa-40ff-92e2-69cca3cecf6a"
+      ]
+    ],
+    "distances": [
+      [
+        0.35349005460739136,
+        0.35349005460739136,
+        0.35349005460739136
+      ]
+    ],
+    "metadatas": [
+      [
+        {
+          "article_url": "https://www.deeplearning.ai/the-batch/project-idea-a-car-for-dinosaurs",
+          "chunk_index": 1,
+          "processed_at": "2025-06-13 02:06:44.103029",
+          "publication_date": "May 22, 2024",
+          "title": "Project Idea — A Car for DinosaursAI projects don’t need to have a meaningful deliverable. Lower the bar and do something creative.",
+          "total_chunks": 3
+        },
+        {
+          "article_url": "https://www.deeplearning.ai/the-batch/project-idea-a-car-for-dinosaurs",
+          "chunk_index": 1,
+          "chunk_text": "Title: Project Idea — A Car for DinosaursAI projects don’t need to have a meaningful deliverable. Lower the bar and do something creative. Content: ’ designs ( with permission ) and coming up with your own. as a parent, i try to celebrate both. ( to be honest, i celebrated the dinosaur car more.) when learning to build lego, it ’ s helpful to start by following a template. but eventually, building your own unique projects enriches your skills. as a developer, too, i try to celebrate unique creations. yes, it is nice to have beautiful software, and the impact of the output does matter. but good software is often written by people who spend many hours tinkering and building things. by building unique projects, you master key software building blocks. then, using those blocks, you can go on to build bigger projects. i routinely tinker with building ai applications, and a lot of my tinkering doesn ’ t result in anything useful. my latest example : i built a streamlit app that would authenticate to google docs, read the text in a doc, use a large language model to edit my text, and write the result back into the doc. i didn ’ t find it useful in the end because of friction in the user interface, and i ’ m sure a commercial provider will soon, if they haven ’ t already, build",
+          "processed_at": "2025-06-13 02:06:44.103029",
+          "publication_date": "May 22, 2024",
+          "title": "Project Idea — A Car for DinosaursAI projects don’t need to have a meaningful deliverable. Lower the bar and do something creative.",
+          "total_chunks": 3
+        },
+        {
+          "article_url": "https://www.deeplearning.ai/the-batch/project-idea-a-car-for-dinosaurs",
+          "chunk_index": 1,
+          "chunk_text": "Title: Project Idea — A Car for DinosaursAI projects don’t need to have a meaningful deliverable. Lower the bar and do something creative. Content: ’ designs ( with permission ) and coming up with your own. as a parent, i try to celebrate both. ( to be honest, i celebrated the dinosaur car more.) when learning to build lego, it ’ s helpful to start by following a template. but eventually, building your own unique projects enriches your skills. as a developer, too, i try to celebrate unique creations. yes, it is nice to have beautiful software, and the impact of the output does matter. but good software is often written by people who spend many hours tinkering and building things. by building unique projects, you master key software building blocks. then, using those blocks, you can go on to build bigger projects. i routinely tinker with building ai applications, and a lot of my tinkering doesn ’ t result in anything useful. my latest example : i built a streamlit app that would authenticate to google docs, read the text in a doc, use a large language model to edit my text, and write the result back into the doc. i didn ’ t find it useful in the end because of friction in the user interface, and i ’ m sure a commercial provider will soon, if they haven ’ t already, build",
+          "processed_at": "2025-06-13 02:06:44.103029",
+          "publication_date": "May 22, 2024",
+          "title": "Project Idea — A Car for DinosaursAI projects don’t need to have a meaningful deliverable. Lower the bar and do something creative.",
+          "total_chunks": 3
+        }
+      ]
+    ],
+    "embeddings": null,
+    "documents": [
+      [
+        null,
+        "Title: Project Idea — A Car for DinosaursAI projects don’t need to have a meaningful deliverable. Lower the bar and do something creative. Content: ’ designs ( with permission ) and coming up with your own. as a parent, i try to celebrate both. ( to be honest, i celebrated the dinosaur car more.) when learning to build lego, it ’ s helpful to start by following a template. but eventually, building your own unique projects enriches your skills. as a developer, too, i try to celebrate unique creations. yes, it is nice to have beautiful software, and the impact of the output does matter. but good software is often written by people who spend many hours tinkering and building things. by building unique projects, you master key software building blocks. then, using those blocks, you can go on to build bigger projects. i routinely tinker with building ai applications, and a lot of my tinkering doesn ’ t result in anything useful. my latest example : i built a streamlit app that would authenticate to google docs, read the text in a doc, use a large language model to edit my text, and write the result back into the doc. i didn ’ t find it useful in the end because of friction in the user interface, and i ’ m sure a commercial provider will soon, if they haven ’ t already, build",
+        "Title: Project Idea — A Car for DinosaursAI projects don’t need to have a meaningful deliverable. Lower the bar and do something creative. Content: ’ designs ( with permission ) and coming up with your own. as a parent, i try to celebrate both. ( to be honest, i celebrated the dinosaur car more.) when learning to build lego, it ’ s helpful to start by following a template. but eventually, building your own unique projects enriches your skills. as a developer, too, i try to celebrate unique creations. yes, it is nice to have beautiful software, and the impact of the output does matter. but good software is often written by people who spend many hours tinkering and building things. by building unique projects, you master key software building blocks. then, using those blocks, you can go on to build bigger projects. i routinely tinker with building ai applications, and a lot of my tinkering doesn ’ t result in anything useful. my latest example : i built a streamlit app that would authenticate to google docs, read the text in a doc, use a large language model to edit my text, and write the result back into the doc. i didn ’ t find it useful in the end because of friction in the user interface, and i ’ m sure a commercial provider will soon, if they haven ’ t already, build"
+      ]
+    ],
+    "uris": null,
+    "data": null
+  },
+  "image_results": {
+    "ids": [
+      [
+        "92a71c66-ea94-4aee-820e-89a4e65bd768",
+        "e82c9dfd-4bc4-4049-bd92-0c5b49ba7082",
+        "f1eee644-b813-4fe0-be35-60333db17155"
+      ]
+    ],
+    "distances": [
+      [
+        0.7941358909070443,
+        0.7941358909070443,
+        0.7941358909070443
+      ]
+    ],
+    "metadatas": [
+      [
+        {
+          "article_url": "https://www.deeplearning.ai/the-batch/issue-10",
+          "image_index": 0,
+          "processed_at": "2025-06-13 02:07:18.704774",
+          "publication_date": "Oct 23, 2019",
+          "title": "Cube Controversy",
+          "total_images": 1
+        },
+        {
+          "article_url": "https://www.deeplearning.ai/the-batch/issue-10",
+          "image_index": 0,
+          "processed_at": "2025-06-13 02:07:18.704774",
+          "publication_date": "Oct 23, 2019",
+          "title": "Cube Controversy",
+          "total_images": 1
+        },
+        {
+          "article_url": "https://www.deeplearning.ai/the-batch/issue-10",
+          "image_index": 0,
+          "image_url": "https://home-wordpress.deeplearning.ai/wp-content/uploads/2021/01/rubik20SIZED.gif",
+          "processed_at": "2025-06-13 02:07:18.704774",
+          "publication_date": "Oct 23, 2019",
+          "title": "Cube Controversy",
+          "total_images": 1
+        }
+      ]
+    ],
+    "embeddings": null,
+    "documents": [
+      [
+        null,
+        null,
+        null
+      ]
+    ],
+    "uris": null,
+    "data": null
+  }
+}

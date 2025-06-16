@@ -1,0 +1,234 @@
+[
+    {
+        "title": "Culture",
+        "content": "31Posts ",
+        "images": [
+            {
+                "url": "https://www.deeplearning.ai/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fdlai-batch-logo.a60dbb9f.png&w=640&q=75",
+                "alt": "The Batch",
+                "caption": ""
+            }
+        ],
+        "url": "https://www.deeplearning.ai/the-batch/tag/culture",
+        "publication_date": "2025-06-04T15:22:00.000-07:00",
+        "scraped_at": "2025-06-15 20:43:10.805859"
+    },
+    {
+        "title": "Machine Translation in Action: Duolingo turns to AI translation to expand its most popular courses to all 28 user languages",
+        "content": "",
+        "images": [
+            {
+                "url": "https://www.deeplearning.ai/_next/image/?url=https%3A%2F%2Fdl-staging-website.ghost.io%2Fcontent%2Fimages%2F2025%2F06%2Funnamed--69--1.jpg&w=3840&q=75",
+                "alt": "Duolingo owl mascots dressed in cultural costumes, representing global languages and cultures.",
+                "caption": ""
+            }
+        ],
+        "url": "https://www.deeplearning.ai/the-batch/tag/culture",
+        "publication_date": "2025-06-04T15:22:00.000-07:00",
+        "scraped_at": "2025-06-15 20:43:10.806859"
+    },
+    {
+        "title": "Music Generation for Pros: Google upgrades its AI music tools for professional use",
+        "content": "",
+        "images": [
+            {
+                "url": "https://www.deeplearning.ai/_next/image/?url=https%3A%2F%2Fdl-staging-website.ghost.io%2Fcontent%2Fimages%2F2025%2F05%2Funnamed--58-.gif&w=3840&q=75",
+                "alt": "AI music generation interface showing waveform and text prompts like deep house, djembe, and saxophone.",
+                "caption": ""
+            }
+        ],
+        "url": "https://www.deeplearning.ai/the-batch/tag/culture",
+        "publication_date": "2025-06-04T15:22:00.000-07:00",
+        "scraped_at": "2025-06-15 20:43:10.807860"
+    },
+    {
+        "title": "New Image Generator for OpenAI API: OpenAI launches API access to GPT Image 1, ChatGPT’s viral image generator",
+        "content": "",
+        "images": [
+            {
+                "url": "https://www.deeplearning.ai/_next/image/?url=https%3A%2F%2Fdl-staging-website.ghost.io%2Fcontent%2Fimages%2F2025%2F05%2FGPT-IMAGE1-2.gif&w=3840&q=75",
+                "alt": "Animation showing GPT Image 1 generating AI images: emotions, surreal scenes, satire, fantasy, and photo-realistic edits.",
+                "caption": ""
+            }
+        ],
+        "url": "https://www.deeplearning.ai/the-batch/tag/culture",
+        "publication_date": "2025-06-04T15:22:00.000-07:00",
+        "scraped_at": "2025-06-15 20:43:10.808862"
+    },
+    {
+        "title": "Deepfake Developers Appropriate Celebrity Likenesses: Viral video uses AI to depict celebrities without consent, sparking legal debate",
+        "content": "",
+        "images": [
+            {
+                "url": "https://www.deeplearning.ai/_next/image/?url=https%3A%2F%2Fdl-staging-website.ghost.io%2Fcontent%2Fimages%2F2025%2F02%2Funnamed--55--1.png&w=3840&q=75",
+                "alt": "“Enough Is Enough” in black on white, with a heart, from an AI-generated video protesting Kanye West’s antisemitism.",
+                "caption": ""
+            }
+        ],
+        "url": "https://www.deeplearning.ai/the-batch/tag/culture",
+        "publication_date": "2025-06-04T15:22:00.000-07:00",
+        "scraped_at": "2025-06-15 20:43:10.808862"
+    },
+    {
+        "title": "Massively More Training Text: Harvard unveils a million-book corpus for AI training",
+        "content": "",
+        "images": [
+            {
+                "url": "https://www.deeplearning.ai/_next/image/?url=https%3A%2F%2Fdl-staging-website.ghost.io%2Fcontent%2Fimages%2F2025%2F01%2Funnamed--44--1.png&w=3840&q=75",
+                "alt": "A narrow library aisle filled with shelves stacked with countless books.",
+                "caption": ""
+            }
+        ],
+        "url": "https://www.deeplearning.ai/the-batch/tag/culture",
+        "publication_date": "2025-06-04T15:22:00.000-07:00",
+        "scraped_at": "2025-06-15 20:43:10.809860"
+    },
+    {
+        "title": "Audrey Tang: AI that unites us",
+        "content": "",
+        "images": [
+            {
+                "url": "https://www.deeplearning.ai/_next/image/?url=https%3A%2F%2Fdl-staging-website.ghost.io%2Fcontent%2Fimages%2F2025%2F01%2Funnamed--41--1.png&w=3840&q=75",
+                "alt": " AUDREY TANG",
+                "caption": ""
+            }
+        ],
+        "url": "https://www.deeplearning.ai/the-batch/tag/culture",
+        "publication_date": "2025-06-04T15:22:00.000-07:00",
+        "scraped_at": "2025-06-15 20:43:10.810860"
+    },
+    {
+        "title": "David Ding: Generated video with music, sound effects, and dialogue",
+        "content": "",
+        "images": [
+            {
+                "url": "https://www.deeplearning.ai/_next/image/?url=https%3A%2F%2Fdl-staging-website.ghost.io%2Fcontent%2Fimages%2F2025%2F01%2Funnamed--37--1.png&w=3840&q=75",
+                "alt": "DAVID DING",
+                "caption": ""
+            }
+        ],
+        "url": "https://www.deeplearning.ai/the-batch/tag/culture",
+        "publication_date": "2025-06-04T15:22:00.000-07:00",
+        "scraped_at": "2025-06-15 20:43:10.810860"
+    },
+    {
+        "title": "Hanno Basse: Generative AI for artists",
+        "content": "",
+        "images": [
+            {
+                "url": "https://www.deeplearning.ai/_next/image/?url=https%3A%2F%2Fdl-staging-website.ghost.io%2Fcontent%2Fimages%2F2025%2F01%2Funnamed--36--1.png&w=3840&q=75",
+                "alt": "HANNO BASSE",
+                "caption": ""
+            }
+        ],
+        "url": "https://www.deeplearning.ai/the-batch/tag/culture",
+        "publication_date": "2025-06-04T15:22:00.000-07:00",
+        "scraped_at": "2025-06-15 20:43:10.811860"
+    },
+    {
+        "title": "Generative Video Takes Off: Generative video models revolutionize content creation with stunning realism",
+        "content": "",
+        "images": [
+            {
+                "url": "https://www.deeplearning.ai/_next/image/?url=https%3A%2F%2Fdl-staging-website.ghost.io%2Fcontent%2Fimages%2F2024%2F12%2Funnamed--43--1.jpg&w=3840&q=75",
+                "alt": "Snowman using a camera during snowfall.",
+                "caption": ""
+            }
+        ],
+        "url": "https://www.deeplearning.ai/the-batch/tag/culture",
+        "publication_date": "2025-06-04T15:22:00.000-07:00",
+        "scraped_at": "2025-06-15 20:43:10.812860"
+    },
+    {
+        "title": "Music Titan Targets AI: Sony Music accuses AI developers of copyright violations.",
+        "content": "",
+        "images": [
+            {
+                "url": "https://www.deeplearning.ai/_next/image/?url=https%3A%2F%2Fdl-staging-website.ghost.io%2Fcontent%2Fimages%2F2024%2F05%2FSONYMusic-Copyright-Logo_v3_1200px.gif&w=3840&q=75",
+                "alt": "Sony Music logo turning into the copyright symbol",
+                "caption": ""
+            }
+        ],
+        "url": "https://www.deeplearning.ai/the-batch/tag/culture",
+        "publication_date": "2025-06-04T15:22:00.000-07:00",
+        "scraped_at": "2025-06-15 20:43:10.812860"
+    },
+    {
+        "title": "Actors Reach Accord on AI: All about the Hollywood actors and studios' deal on generative AI usage in films and TV",
+        "content": "",
+        "images": [
+            {
+                "url": "https://www.deeplearning.ai/_next/image/?url=https%3A%2F%2Fdl-staging-website.ghost.io%2Fcontent%2Fimages%2F2023%2F11%2Funnamed--73--2.png&w=3840&q=75",
+                "alt": "SAG-AFTRA member with a picket sign that says \"A.I. is soulless\"",
+                "caption": ""
+            }
+        ],
+        "url": "https://www.deeplearning.ai/the-batch/tag/culture",
+        "publication_date": "2025-06-04T15:22:00.000-07:00",
+        "scraped_at": "2025-06-15 20:43:10.813860"
+    },
+    {
+        "title": "Data Disappears: Creative workers don't want AI developers to train models on their work",
+        "content": "",
+        "images": [
+            {
+                "url": "https://www.deeplearning.ai/_next/image/?url=https%3A%2F%2Fdl-staging-website.ghost.io%2Fcontent%2Fimages%2F2023%2F10%2FDataDisappearence5_1200px-1.jpg&w=3840&q=75",
+                "alt": "Illustration of a wizard with a facial expression evoking 'The Scream' painting in front of a half-empty bookshelf",
+                "caption": ""
+            }
+        ],
+        "url": "https://www.deeplearning.ai/the-batch/tag/culture",
+        "publication_date": "2025-06-04T15:22:00.000-07:00",
+        "scraped_at": "2025-06-15 20:43:10.813860"
+    },
+    {
+        "title": "Chatbots for Productivity: Microsoft extends Copilot to 365 and Windows.",
+        "content": "",
+        "images": [
+            {
+                "url": "https://www.deeplearning.ai/_next/image/?url=https%3A%2F%2Fdl-staging-website.ghost.io%2Fcontent%2Fimages%2F2023%2F09%2FCOPILOT-1.gif&w=3840&q=75",
+                "alt": "GIF of Copilot editing and generating images for Windows photo apps",
+                "caption": ""
+            }
+        ],
+        "url": "https://www.deeplearning.ai/the-batch/tag/culture",
+        "publication_date": "2025-06-04T15:22:00.000-07:00",
+        "scraped_at": "2025-06-15 20:43:10.814860"
+    },
+    {
+        "title": "Painting With Text, Voice, and Images: ChatGPT now accepts voice and image inputs and outputs.",
+        "content": "",
+        "images": [
+            {
+                "url": "https://www.deeplearning.ai/_next/image/?url=https%3A%2F%2Fdl-staging-website.ghost.io%2Fcontent%2Fimages%2F2023%2F09%2FDALLE3-1.gif&w=3840&q=75",
+                "alt": "Slideshow of images generated by DALL-E 3",
+                "caption": ""
+            }
+        ],
+        "url": "https://www.deeplearning.ai/the-batch/tag/culture",
+        "publication_date": "2025-06-04T15:22:00.000-07:00",
+        "scraped_at": "2025-06-15 20:43:10.814860"
+    },
+    {
+        "title": "Music Generation For the Masses: Stability.ai launches Stable Audio, a text-to-music generator.",
+        "content": "",
+        "images": [
+            {
+                "url": "https://www.deeplearning.ai/_next/image/?url=https%3A%2F%2Fdl-staging-website.ghost.io%2Fcontent%2Fimages%2F2023%2F09%2FDiffusion-2.png&w=3840&q=75",
+                "alt": "Graphic model of Stable Audio difffusion and transcoding process",
+                "caption": ""
+            }
+        ],
+        "url": "https://www.deeplearning.ai/the-batch/tag/culture",
+        "publication_date": "2025-06-04T15:22:00.000-07:00",
+        "scraped_at": "2025-06-15 20:43:10.815860"
+    },
+    {
+        "title": "Subscribe to The Batch",
+        "content": "Stay updated with weekly AI News and Insights delivered to your inbox ",
+        "images": [],
+        "url": "https://www.deeplearning.ai/the-batch/tag/culture",
+        "publication_date": "2025-06-04T15:22:00.000-07:00",
+        "scraped_at": "2025-06-15 20:43:10.815860"
+    }
+]

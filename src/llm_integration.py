@@ -3,9 +3,12 @@ from anthropic import Anthropic
 import os
 from openai import OpenAI
 from typing import Dict, List, Optional
+from dotenv import load_dotenv
+
 
 class LLMIntegration:
     def __init__(self, provider="openai", model="gpt-3.5-turbo"):
+        load_dotenv()
         self.provider = provider
         self.model = model
         

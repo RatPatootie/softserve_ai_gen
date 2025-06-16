@@ -1,0 +1,128 @@
+{
+  "text_results": {
+    "ids": [
+      [
+        "fd60d9c4-19c5-4291-8708-857ee40ad0ae",
+        "8c9eeccf-eaf6-4a3e-b5f3-3d3bbbda9d58",
+        "70991803-5077-4f5f-a0a9-bfa985313870",
+        "0963e1aa-5644-4cf9-a3cb-17ba098db476",
+        "5c9cdad7-8455-4899-8372-1bca6348740f"
+      ]
+    ],
+    "distances": [
+      [
+        0.8361214521653134,
+        0.8384338993847781,
+        0.8637853781104337,
+        0.8820183420177028,
+        0.9064811456743599
+      ]
+    ],
+    "metadatas": [
+      [
+        {
+          "article_url": "https://www.deeplearning.ai/the-batch/dall-e-2s-emergent-vocabulary",
+          "chunk_index": 1,
+          "chunk_text": "Title: DALL·E 2’s Emergent VocabularyThe text-to- image generator DALL·E 2 invents its own words and concepts Content: including gibberish. since dall · e 2 was trained to generate coherent images in response to any input text, it ’ s no surprise that gibberish produces good images. but why does the author ’ s method for deriving this gibberish produce consistent images in some cases, random images in others, and a 5 0 / 5 0 combination of consistent and random images in still others? the authors and denizens of social media came up with a few hypotheses : why it matters : the discovery that dall · e 2 ’ s vocabulary may extend beyond its training data highlights the black - box nature of deep learning and the value of interpretable models. can users benefit from understanding the model ’ s idiosyncratic style of communication? does its apparent ability to respond to gibberish open a back door that would allow hackers to get results the model is designed to block? do builders of natural language models need to start accounting for gibberish inputs? these questions may seem fanciful, but they may be critical to making such models dependable and secure. we ’ re thinking : ai puzzles always spur an appetite, and right now a plate of fresh wa ch zod rea would hit the spot! stay updated with weekly ai news and",
+          "processed_at": "2025-06-13 02:07:04.104078",
+          "publication_date": "Jun 08, 2022",
+          "title": "DALL·E 2’s Emergent VocabularyThe text-to- image generator DALL·E 2 invents its own words and concepts",
+          "total_chunks": 3
+        },
+        {
+          "article_url": "https://www.deeplearning.ai/the-batch/dall-e-2s-emergent-vocabulary",
+          "chunk_index": 2,
+          "chunk_text": "Title: DALL·E 2’s Emergent VocabularyThe text-to- image generator DALL·E 2 invents its own words and concepts Content: ch zod rea would hit the spot! stay updated with weekly ai news and insights delivered to your inbox",
+          "processed_at": "2025-06-13 02:07:04.104078",
+          "publication_date": "Jun 08, 2022",
+          "title": "DALL·E 2’s Emergent VocabularyThe text-to- image generator DALL·E 2 invents its own words and concepts",
+          "total_chunks": 3
+        },
+        {
+          "article_url": "https://www.deeplearning.ai/the-batch/dall-e-2s-emergent-vocabulary",
+          "chunk_index": 0,
+          "chunk_text": "Title: DALL·E 2’s Emergent VocabularyThe text-to- image generator DALL·E 2 invents its own words and concepts Content: enroll inorchestrating workflows for genai applications openai ’ s text - to - image generatordall · e 2 produces pictures with uncanny creativity on demand. has it invented its own language as well? what ’ s new : ask dall · e 2 to generate an image that includes text, and often its output will include seemingly random characters. giannis daras and alexandros g. dimakis at university of texasdiscoveredthat if you feed the gibberish back into the model, sometimes it will generate images that accord with the text you requested earlier. how it works : the authors devised a simple process to determine whether dall · e 2 ’ s gibberish has meaning to the model. results : the authors provide only a handful of quantitative results, but they are intriguing. they report that “ a lot of experimentation ” was required to find gibberish that produced consistent images. inside the mind of dall · e 2 : inputs to dall · e 2 are tokenized as subwords ( for instance, apoploe may divide into apo, plo, e ). subwords can make up any possible input text including gibberish. since dall · e 2 was trained to generate coherent images",
+          "processed_at": "2025-06-13 02:07:04.104078",
+          "publication_date": "Jun 08, 2022",
+          "title": "DALL·E 2’s Emergent VocabularyThe text-to- image generator DALL·E 2 invents its own words and concepts",
+          "total_chunks": 3
+        },
+        {
+          "article_url": "https://www.deeplearning.ai/the-batch/issue-292",
+          "chunk_index": 0,
+          "chunk_text": "Title: Microsoft Tackles Voice-In, Text-Out Content: microsoft debuted its first official large language model that responds to spoken input. what ’ s new : microsoft releasedphi - 4 - multimodal, an open weights model that processes text, images, and speech simultaneously. how it works : phi - 4 - multimodal has six components : phi - 4 - mini, vision and speech encoders as well as corresponding projectors ( which modify the vision or speech embeddings so the base model can understand them ), and two lora adapters. the lora adapters modify the base weights depending on the input : one adapter modifies them for speech - text problems, and one for vision - text and vision - speech problems. results : the authors compared phi - 4 - multimodal to other multimodal models on text - vision, vision - speech, text - speech tasks. behind the news : this work adds to the growing body of models with voice - in / text - out capability, including the open weightsdivamodel developed by a team led by diyi yang at stanford university. why it matters : the architectural options continue to expand for building neural networks that process text, images, audio, and various combinations. while some teams maintain separate models for separate data modalities, likeqwen",
+          "processed_at": "2025-06-13 02:07:08.680546",
+          "publication_date": "Mar 12, 2025",
+          "title": "Microsoft Tackles Voice-In, Text-Out",
+          "total_chunks": 2
+        },
+        {
+          "article_url": "https://www.deeplearning.ai/the-batch/agentic-workflow-generates-novel-scientific-research-papers",
+          "chunk_index": 1,
+          "chunk_text": "Title: AI Agents for AI ResearchAgentic workflow generates novel scientific research papers Content: inesfor papers presented at the neural information processing systems ( neurips ) conference. the guidelines include an overall score between 1 ( very strongly reject ) and 1 0 ( award - quality : flawless and groundbreaking ) and a decision to reject or accept the paper. why it matters : agentic workflows are a rising theme in ai research from simpler design patterns likereflectionto complex workflows fortranslating literature. these workflows make it possible to break down complex problems into more manageable subtasks. by breaking the task of conducting ai research into various stages of generating ideas, testing them, and writing a paper, an llm that has access to the right tools can generate novel research papers with actual experimental results. we ’ re thinking : rather than merely synthesizing existing knowledge, this work points a fascinating direction for using ai to generate new knowledge! right now, an llm can suggest starting points for human researchers along with experiments that back up its suggestions. stay updated with weekly ai news and insights delivered to your inbox",
+          "processed_at": "2025-06-13 02:07:06.149497",
+          "publication_date": "Aug 21, 2024",
+          "title": "AI Agents for AI ResearchAgentic workflow generates novel scientific research papers",
+          "total_chunks": 2
+        }
+      ]
+    ],
+    "embeddings": null,
+    "documents": [
+      [
+        "Title: DALL·E 2’s Emergent VocabularyThe text-to- image generator DALL·E 2 invents its own words and concepts Content: including gibberish. since dall · e 2 was trained to generate coherent images in response to any input text, it ’ s no surprise that gibberish produces good images. but why does the author ’ s method for deriving this gibberish produce consistent images in some cases, random images in others, and a 5 0 / 5 0 combination of consistent and random images in still others? the authors and denizens of social media came up with a few hypotheses : why it matters : the discovery that dall · e 2 ’ s vocabulary may extend beyond its training data highlights the black - box nature of deep learning and the value of interpretable models. can users benefit from understanding the model ’ s idiosyncratic style of communication? does its apparent ability to respond to gibberish open a back door that would allow hackers to get results the model is designed to block? do builders of natural language models need to start accounting for gibberish inputs? these questions may seem fanciful, but they may be critical to making such models dependable and secure. we ’ re thinking : ai puzzles always spur an appetite, and right now a plate of fresh wa ch zod rea would hit the spot! stay updated with weekly ai news and",
+        "Title: DALL·E 2’s Emergent VocabularyThe text-to- image generator DALL·E 2 invents its own words and concepts Content: ch zod rea would hit the spot! stay updated with weekly ai news and insights delivered to your inbox",
+        "Title: DALL·E 2’s Emergent VocabularyThe text-to- image generator DALL·E 2 invents its own words and concepts Content: enroll inorchestrating workflows for genai applications openai ’ s text - to - image generatordall · e 2 produces pictures with uncanny creativity on demand. has it invented its own language as well? what ’ s new : ask dall · e 2 to generate an image that includes text, and often its output will include seemingly random characters. giannis daras and alexandros g. dimakis at university of texasdiscoveredthat if you feed the gibberish back into the model, sometimes it will generate images that accord with the text you requested earlier. how it works : the authors devised a simple process to determine whether dall · e 2 ’ s gibberish has meaning to the model. results : the authors provide only a handful of quantitative results, but they are intriguing. they report that “ a lot of experimentation ” was required to find gibberish that produced consistent images. inside the mind of dall · e 2 : inputs to dall · e 2 are tokenized as subwords ( for instance, apoploe may divide into apo, plo, e ). subwords can make up any possible input text including gibberish. since dall · e 2 was trained to generate coherent images",
+        "Title: Microsoft Tackles Voice-In, Text-Out Content: microsoft debuted its first official large language model that responds to spoken input. what ’ s new : microsoft releasedphi - 4 - multimodal, an open weights model that processes text, images, and speech simultaneously. how it works : phi - 4 - multimodal has six components : phi - 4 - mini, vision and speech encoders as well as corresponding projectors ( which modify the vision or speech embeddings so the base model can understand them ), and two lora adapters. the lora adapters modify the base weights depending on the input : one adapter modifies them for speech - text problems, and one for vision - text and vision - speech problems. results : the authors compared phi - 4 - multimodal to other multimodal models on text - vision, vision - speech, text - speech tasks. behind the news : this work adds to the growing body of models with voice - in / text - out capability, including the open weightsdivamodel developed by a team led by diyi yang at stanford university. why it matters : the architectural options continue to expand for building neural networks that process text, images, audio, and various combinations. while some teams maintain separate models for separate data modalities, likeqwen",
+        "Title: AI Agents for AI ResearchAgentic workflow generates novel scientific research papers Content: inesfor papers presented at the neural information processing systems ( neurips ) conference. the guidelines include an overall score between 1 ( very strongly reject ) and 1 0 ( award - quality : flawless and groundbreaking ) and a decision to reject or accept the paper. why it matters : agentic workflows are a rising theme in ai research from simpler design patterns likereflectionto complex workflows fortranslating literature. these workflows make it possible to break down complex problems into more manageable subtasks. by breaking the task of conducting ai research into various stages of generating ideas, testing them, and writing a paper, an llm that has access to the right tools can generate novel research papers with actual experimental results. we ’ re thinking : rather than merely synthesizing existing knowledge, this work points a fascinating direction for using ai to generate new knowledge! right now, an llm can suggest starting points for human researchers along with experiments that back up its suggestions. stay updated with weekly ai news and insights delivered to your inbox"
+      ]
+    ],
+    "uris": null,
+    "data": null
+  },
+  "image_results": {
+    "ids": [
+      [
+        "f51084d3-3bf9-414c-afdd-db10c4124319",
+        "9c3dc04c-dee7-45eb-af75-25895b21a6af"
+      ]
+    ],
+    "distances": [
+      [
+        0.8153954591846959,
+        0.816684322119745
+      ]
+    ],
+    "metadatas": [
+      [
+        {
+          "article_url": "https://www.deeplearning.ai/the-batch/issue-292",
+          "image_index": 0,
+          "image_url": "https://dl-staging-website.ghost.io/content/images/2025/03/unnamed--60-.png",
+          "processed_at": "2025-06-13 02:07:08.673152",
+          "publication_date": "Mar 12, 2025",
+          "title": "Compact Reasoning",
+          "total_images": 1
+        },
+        {
+          "article_url": "https://www.deeplearning.ai/the-batch/issue-292",
+          "image_index": 0,
+          "image_url": "https://dl-staging-website.ghost.io/content/images/2025/03/unnamed--61-.png",
+          "processed_at": "2025-06-13 02:07:08.680546",
+          "publication_date": "Mar 12, 2025",
+          "title": "Microsoft Tackles Voice-In, Text-Out",
+          "total_images": 1
+        }
+      ]
+    ],
+    "embeddings": null,
+    "documents": [
+      [
+        null,
+        null
+      ]
+    ],
+    "uris": null,
+    "data": null
+  }
+}

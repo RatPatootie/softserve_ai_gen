@@ -1,17 +1,16 @@
-from src.vector_store import MultimodalVectorStore
+from src.vector_store import MultimodalDB
 import json
 from typing import List, Dict, Any
 
 class MultimodalRetriever:
-    def __init__(self, vector_store: MultimodalVectorStore):
+    def __init__(self, vector_store: MultimodalDB):
         self.vector_store = vector_store
     
     def retrieve(self, query: str, n_results: int = 5) -> Dict[str, Any]:
         """Retrieve relevant content for a given query"""
         
         # Perform hybrid search
-        search_results = self.vector_store.hybrid_search(query, n_results)
-        
+        search_results = self.vector_store.search(query, n_results)
         # Process and rank results
         processed_results = self.process_search_results(search_results, query, n_results)
         

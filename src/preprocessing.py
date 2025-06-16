@@ -1,86 +1,88 @@
-import nltk
-from nltk.tokenize import sent_tokenize, word_tokenize
-from nltk.corpus import stopwords
-from nltk.stem import WordNetLemmatizer
 import re
 from PIL import Image
-import torch 
 from transformers import CLIPProcessor, CLIPModel
 import numpy as np
+import torch
+from io import BytesIO
+import requests
+
 
 class TextPreprocessor:
     def __init__(self):
-        nltk.download('punkt', quiet=True)
-        nltk.download('stopwords', quiet=True)
-        nltk.download('wordnet', quiet=True)
-        
-        self.lemmatizer = WordNetLemmatizer()
-        self.stop_words = set(stopwords.words('english'))
-    
+        self.clip_model = CLIPModel.from_pretrained("laion/CLIP-ViT-H-14-laion2B-s32B-b79K")
+        self.clip_processor = CLIPProcessor.from_pretrained("laion/CLIP-ViT-H-14-laion2B-s32B-b79K")
+
     def clean_text(self, text):
-        """Clean and normalize text"""
+        """Clean text from HTML, emojis, extra spaces, and known noise"""
         # Remove HTML tags
-        text = re.sub('<[^<]+?>', '', text)
-        
-        # Remove special characters and digits
-        text = re.sub(r'[^a-zA-Z\s]', '', text)
-        
-        # Convert to lowercase
-        text = text.lower()
-        
-        # Remove extra whitespace
-        text = ' '.join(text.split())
-        
+        text = re.sub(r'<[^<]+?>', '', text)
+        # Remove known repetitive marketing phrases
+        text = re.sub(r'✨\s*New course!', '', text,flags=re.IGNORECASE)
+
+        # Remove emojis
+        emoji_pattern = re.compile("["
+            u"\U0001F600-\U0001F64F"  # Emoticons
+            u"\U0001F300-\U0001F5FF"  # Symbols & pictographs
+            u"\U0001F680-\U0001F6FF"  # Transport & map symbols
+            u"\U0001F1E0-\U0001F1FF"  # Flags
+            "]+", flags=re.UNICODE)
+        text = emoji_pattern.sub(r'', text)
+        # Normalize whitespace
+        text = re.sub(r'\s+', ' ', text).strip()
         return text
-    
-    def tokenize_and_lemmatize(self, text):
-        """Tokenize and lemmatize text"""
-        tokens = word_tokenize(text)
-        
-        # Remove stopwords and lemmatize
-        processed_tokens = [
-            self.lemmatizer.lemmatize(token)
-            for token in tokens
-            if token not in self.stop_words and len(token) > 2
-        ]
-        
-        return processed_tokens
-    
-    def create_chunks(self, text, chunk_size=500, overlap=50):
-        """Split text into overlapping chunks"""
-        sentences = sent_tokenize(text)
+
+    def get_clip_text_embedding(self, text):
+        """Get CLIP text embedding for a given text """
+        inputs = self.clip_processor(text=[text], return_tensors="pt", padding=True, truncation=True)
+        with torch.no_grad():
+            text_features = self.clip_model.get_text_features(**inputs)
+        return text_features.numpy()
+
+    @staticmethod
+    def chunk_text_with_title(article_json, chunk_size=256, overlap=16, tokenizer=None):
+        title = article_json.get("title", "")
+        content = article_json.get("content", "").strip()
+
+        content_tokens = tokenizer.encode(content, add_special_tokens=False)
         chunks = []
-        current_chunk = []
-        current_length = 0
-        
-        for sentence in sentences:
-            sentence_length = len(sentence.split())
-            
-            if current_length + sentence_length > chunk_size and current_chunk:
-                chunks.append(' '.join(current_chunk))
-                
-                # Create overlap
-                overlap_sentences = current_chunk[-overlap//10:] if len(current_chunk) > overlap//10 else current_chunk
-                current_chunk = overlap_sentences + [sentence]
-                current_length = sum(len(s.split()) for s in current_chunk)
-            else:
-                current_chunk.append(sentence)
-                current_length += sentence_length
-        
-        if current_chunk:
-            chunks.append(' '.join(current_chunk))
-            
+        start = 0
+
+        while start < len(content_tokens):
+            end = min(start + chunk_size, len(content_tokens))
+            chunk_tokens = content_tokens[start:end]
+            chunk_text = tokenizer.decode(chunk_tokens)
+
+            # Додаємо title
+            full_chunk = f"Title: {title}\nContent: {chunk_text}"
+
+            # Перевіряємо загальну кількість токенів у цьому об'єднаному тексті
+            tokenized_full = tokenizer(full_chunk, return_tensors="pt", truncation=True, max_length=77)
+            input_ids = tokenized_full['input_ids'][0]
+
+            # Якщо результат перевищує 77 навіть після обрізки — скоротимо chunk_text
+            while len(input_ids) > 77 and len(chunk_tokens) > 5:
+                chunk_tokens = chunk_tokens[:-1]
+                chunk_text = tokenizer.decode(chunk_tokens)
+                full_chunk = f"Title: {title}\nContent: {chunk_text}"
+                input_ids = tokenizer(full_chunk, return_tensors="pt")['input_ids'][0]
+
+            chunks.append(full_chunk)
+            start += chunk_size - overlap
+
         return chunks
+
+
+
 
 class ImagePreprocessor:
     def __init__(self):
-        self.clip_model = CLIPModel.from_pretrained("openai/clip-vit-base-patch32")
-        self.clip_processor = CLIPProcessor.from_pretrained("openai/clip-vit-base-patch32")
+        self.clip_model = CLIPModel.from_pretrained("laion/CLIP-ViT-H-14-laion2B-s32B-b79K")
+        self.clip_processor = CLIPProcessor.from_pretrained("laion/CLIP-ViT-H-14-laion2B-s32B-b79K")
     
-    def process_image(self, image_path):
+    def process_image(self, image):
         """Process image and extract features"""
         try:
-            image = Image.open(image_path).convert('RGB')
+            
             
             # Resize if too large
             if image.size[0] > 1024 or image.size[1] > 1024:
@@ -92,28 +94,19 @@ class ImagePreprocessor:
             with torch.no_grad():
                 image_features = self.clip_model.get_image_features(**inputs)
                 
-            return {
-                'features': image_features.numpy(),
-                'size': image.size,
-                'mode': image.mode
-            }
+            return image_features.numpy()
+          
             
         except Exception as e:
-            print(f"Error processing image {image_path}: {e}")
+            print(f"Error processing image {image}: {e}")
             return None
-    
-    def generate_image_description(self, image_path, caption=""):
-        """Generate description for image using CLIP"""
+    def download_image_from_url(self,url):
         try:
-            image = Image.open(image_path).convert('RGB')
-            
-            # Use existing caption or generate generic description
-            if caption:
-                return f"Image showing: {caption}"
-            
-            # For demo purposes, return a generic description
-            # In production, you might use a more sophisticated image captioning model
-            return "Image from The Batch article"
-            
+            response = requests.get(url)
+            response.raise_for_status()
+            image = Image.open(BytesIO(response.content))
+            return image
         except Exception as e:
-            return f"Image processing error: {str(e)}"
+            print(f"Error downloading image: {e}")
+            return None
+
